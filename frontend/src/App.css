@@ -1,0 +1,41 @@
+@import url("https://use.typekit.net/jbd4swc.css");
+
+header, .carousel {
+    background-color: #bf7256;
+    color: #734136;
+}
+
+h1, h2, h3, h4, h5 {
+ font-family: "ff-real-headline-pro", sans-serif;
+ font-weight: 700;
+ font-style: normal;
+ 
+ 
+}
+
+
+p {
+  font-family: "ff-real-text-pro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #734136;
+
+}
+
+main {
+    min-height: 80vh;
+    background-color: #bf7256;
+    
+}
+
+.carousel {
+    padding: 50px;
+    height: 250px;
+}
+
+footer {
+    background-color: #bf7256;
+    height: 12vh;
+}
+
+
