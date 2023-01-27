@@ -13,7 +13,6 @@ const App = () => {
       <main>
       <About />
       </main>
-    
       <Footer />
      
     </body>

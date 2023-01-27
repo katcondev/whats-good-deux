@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Container, Button } from 'react-bootstrap'
 
 const Aboutus = () => {
   return (
@@ -11,7 +11,10 @@ const Aboutus = () => {
 
     <p>Whats-Good mobile app is designed with tools to give Black people foresight into what type of businesses they are will giving their resources to more confidently.
     </p>
+    <Button className='my-4'>SAYLESS</Button>
     </div>
+    
+
     </Container>
   )
 }
