@@ -11,8 +11,6 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className='justify-content-end mx-auto'>
-              <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/reviews">Reviews</Nav.Link> 
               <Nav.Link href="/cart">Cart</Nav.Link>
               <Nav.Link href="/login">Sign in</Nav.Link> 
             </Nav>

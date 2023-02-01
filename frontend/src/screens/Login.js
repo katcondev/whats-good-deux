@@ -1,11 +1,12 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 
 const Login = () => {
   return (
-    <div className='Container'>
+    <Container className='Container'>
     <h1>Login</h1>
       
-    </div>
+    </Container>
   )
 }
 
