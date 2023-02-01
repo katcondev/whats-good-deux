@@ -10,7 +10,7 @@ const Header = () => {
           An Unapologetic Experience</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className='mx-auto'>
+            <Nav className='justify-content-end mx-auto'>
               <Nav.Link href="/about">About</Nav.Link>
               <Nav.Link href="/reviews">Reviews</Nav.Link> 
               <Nav.Link href="/cart">Cart</Nav.Link>
