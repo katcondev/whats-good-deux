@@ -1,7 +1,8 @@
 @import url("https://use.typekit.net/jbd4swc.css");
 
-body {
+html, body {
     background-color: #BF8360;
+    height: 100%;
 }
 
 main {
@@ -78,9 +79,9 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 40px;
-    margin-top: 20px;
     background-color: #BF8360;
+    font-size: small;
+    color: #5a3528;
 }
 
 
