@@ -9,8 +9,8 @@ const Slide = () => {
   };
 
   return (
-    <Row className='py-5' >
-      <div className="pt-5">
+    <Row className='py-5'>
+      <div className='pt-5'>
         <Carousel activeIndex={index} onSelect={handleSelect}>
           <Carousel.Item>
             <img

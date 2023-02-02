@@ -12,6 +12,7 @@ main {
 
 }
 
+
 header,
 .carousel,
 .card {
@@ -20,7 +21,7 @@ header,
 }
 
 .carousel {
-    margin-top:40px;
+    margin-top:50px;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -126,11 +127,13 @@ header {
 .btn-primary {
     background-color: #5a3528;
     color: whitesmoke;
+    height: 1.5 em;
+    border-radius: 10px;
 }
 
 .btn-primary:hover {
     background-color: #BF1B68;
-    color: whitesmoke;
+    color:whitesmoke;
 }
 
 footer {
