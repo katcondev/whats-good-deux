@@ -41,11 +41,13 @@ p {
 
 }
 
+
 .navbar-brand {
     font-family: "ff-real-headline-pro", sans-serif;
     font-weight: 700;
     font-style: normal;
     color: #5a3528;
+    
 
 }
 
@@ -57,7 +59,17 @@ p {
 
 }
 
+@media (max-width:500px) {
+    /* .navbar-brand {
+        display: none;
+    } */
 
+    .carousel {
+        display: none;
+    }
+
+    
+}
 
 .navbar-nav .nav-link {
     font-family: "ff-real-text-pro", sans-serif;

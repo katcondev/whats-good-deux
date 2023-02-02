@@ -9,7 +9,7 @@ const Slide = () => {
   };
 
   return (
-    <div className='container w-100'>
+    <div className='container w-100' id='slider'>
       <Carousel
         activeIndex={index}
         onSelect={handleSelect}
