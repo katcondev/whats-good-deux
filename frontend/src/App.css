@@ -1,6 +1,7 @@
 @import url("https://use.typekit.net/jbd4swc.css");
 
-html, body {
+html,
+body {
     background-color: #BF8360;
     height: 100%;
 }
@@ -11,17 +12,28 @@ main {
 
 }
 
-header, .carousel {
+header,
+.carousel, .card {
     background-color: #BF8360;
-    
+
 }
 
-h1, h2, h3, h4, h5 {
- font-family: "ff-real-headline-pro", sans-serif;
- font-weight: 700;
- font-style: normal;
- color: #5a3528;;
- 
+.card {
+    border-color: #5a3528;
+    color: #5a3528;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "ff-real-headline-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #5a3528;
+    ;
+
 }
 
 p {
@@ -30,14 +42,14 @@ p {
     font-style: normal;
     font-size: large;
     color: #5a3528;
-  
-  }
+
+}
 
 .navbar-brand {
- font-family: "ff-real-headline-pro", sans-serif;
- font-weight: 700;
- font-style: normal;
- color: #5a3528;
+    font-family: "ff-real-headline-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #5a3528;
 
 }
 
@@ -46,24 +58,24 @@ p {
     font-weight: 700;
     font-style: normal;
     color: #BF1B68;
-   
-   }
+
+}
 
 .navbar-nav .nav-link {
     font-family: "ff-real-text-pro", sans-serif;
     font-weight: 300;
     font-style: normal;
     color: #5a3528;
-  
-  }
+
+}
 
 .navbar-nav .nav-link:hover {
     font-family: "ff-real-text-pro", sans-serif;
     font-weight: 300;
     font-style: normal;
     color: #BF1B68;
-  
-  }
+
+}
 
 .btn-primary {
     background-color: #5a3528;
@@ -83,5 +95,3 @@ footer {
     font-size: small;
     color: #5a3528;
 }
-
-
