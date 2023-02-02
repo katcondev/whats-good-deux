@@ -6,19 +6,22 @@ import products from "../products";
 
 const Aboutus = () => {
   return (
-    <Container id='about'>
+    <>
       <Slide />
-      <div className='mx-auto py-3 container'>
-        <h3 className='pt-3'>Popular Drinks</h3>
-        <Row>
-          {products.map((product) => (
-            <Col sm={12} md={6} lg={4} xl={3}>
-              <Product product={product} />
-            </Col>
-          ))}
-        </Row>
-      </div>
-    </Container>
+      <Container id='about'>
+      
+        <div className='mx-auto py-3 container'>
+          <h3 className='pt-3'>Popular Drinks</h3>
+          <Row>
+            {products.map((product) => (
+              <Col sm={12} md={6} lg={4} xl={3}>
+                <Product product={product} />
+              </Col>
+            ))}
+          </Row>
+        </div>
+      </Container>
+    </>
   );
 };
 

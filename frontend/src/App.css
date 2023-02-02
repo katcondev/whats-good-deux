@@ -19,6 +19,14 @@ header,
 
 }
 
+.carousel {
+    margin-top:40px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    display: none;
+}
+
 h1,
 h2,
 h3,
@@ -41,12 +49,23 @@ p {
 
 }
 
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
 
+header {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+
+}
 .navbar-brand {
     font-family: "ff-real-headline-pro", sans-serif;
     font-weight: 700;
     font-style: normal;
     color: #5a3528;
+    
     
 
 }
