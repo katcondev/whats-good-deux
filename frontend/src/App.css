@@ -2,19 +2,20 @@
 
 html,
 body {
-    background-color: #BF8360;
+    background-color: #d4886c;
     height: 100%;
 }
 
 main {
-    background-color: #BF8360;
+    background-color: #d4886c;
     margin-bottom: 20px;
 
 }
 
 header,
-.carousel, .card {
-    background-color: #BF8360;
+.carousel,
+.card {
+    background-color: #d4886c;
 
 }
 
@@ -55,6 +56,8 @@ p {
     color: #BF1B68;
 
 }
+
+
 
 .navbar-nav .nav-link {
     font-family: "ff-real-text-pro", sans-serif;
@@ -103,7 +106,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #BF8360;
+    background-color: #d4886c;
     font-size: small;
     color: #5a3528;
 }

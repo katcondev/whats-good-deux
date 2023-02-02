@@ -9,7 +9,7 @@ const Aboutus = () => {
     <Container id='about'>
       <Slide />
       <div className='mx-auto py-3 container'>
-        <h3>Popular Drinks</h3>
+        <h3 className='pt-3'>Popular Drinks</h3>
         <Row>
           {products.map((product) => (
             <Col sm={12} md={6} lg={4} xl={3}>
