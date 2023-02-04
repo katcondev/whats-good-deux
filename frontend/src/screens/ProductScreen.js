@@ -14,7 +14,7 @@ const ProductScreen = ({ match }) => {
   const product = products.find((p) => p._id === match.params.id);
   return (
     <div id='prodW'>
-      <Button className='my-3' href='/'>
+      <Button className='py-4 my-3' href='/'>
         Go Back
       </Button>
       <Row className='py-4'>
