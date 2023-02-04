@@ -12,12 +12,15 @@ main {
 
 }
 
-
 header,
 .carousel,
 .card {
     background-color: #d4886c;
 
+}
+
+#prodW {
+    padding-top: 150px;
 }
 
 .carousel {
@@ -71,6 +74,14 @@ header {
 
 }
 
+.card {
+    border-color: #d4886c;
+}
+
+.list-group {
+    border-color: #d4886c;
+}
+
 .navbar-brand:hover {
     font-family: "ff-real-headline-pro", sans-serif;
     font-weight: 700;
@@ -79,13 +90,13 @@ header {
 
 }
 
-@media (max-width:500px) {
-    /* .navbar-brand {
-        display: none;
-    } */
-
+@media (max-width:450px) {
     .carousel {
         display: none;
+    }
+    #prodW {
+        padding-top: 20px;
+        padding-bottom: 25px;
     }
 
     

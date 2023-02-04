@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
   Row,
   Col,
@@ -14,31 +13,37 @@ import products from "../products";
 const ProductScreen = ({ match }) => {
   const product = products.find((p) => p._id === match.params.id);
   return (
-    <div className='mt-5 py-5'>
-      <Link className='btn btn-light my-3' to='/'>
+    <div id='prodW'>
+      <Button className='my-3' href='/'>
         Go Back
-      </Link>
-      <Row>
-        <Col md={6}>
-          <Image src={product.image} alt={product.name} fluid />
+      </Button>
+      <Row className='py-4'>
+        <Col lg={5}>
+          <Image
+            className='square rounded-4'
+            src={product.image}
+            alt={product.name}
+            fluid
+          />
         </Col>
-        <Col md={3}>
+        <Col className='square rounded-4 pt-4' lg={4}>
           <ListGroup variant='flush'>
             <ListGroup.Item>
               <h5>{product.name}</h5>
             </ListGroup.Item>
-            <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
+            <ListGroup.Item>Price: $ {product.price}</ListGroup.Item>
             <ListGroupItem>Description:{product.description}</ListGroupItem>
+            <ListGroupItem>{product.category}</ListGroupItem>
           </ListGroup>
         </Col>
-        <Col md={3}>
-          <Card>
-            <ListGroup variant='flush'>
+        <Col lg={3}>
+          <Card className='py-3 my-3 border-0'>
+            <ListGroup ariant='flush'>
               <ListGroup.Item>
                 <Row>
                   <Col>Price</Col>
                   <Col>
-                    <strong>CA${product.price}</strong>
+                    <strong>CA ${product.price}</strong>
                   </Col>
                 </Row>
               </ListGroup.Item>
