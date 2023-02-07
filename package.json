@@ -1,0 +1,22 @@
+{
+  "name": "whats-good",
+  "version": "1.0.0",
+  "description": "This is a full stack app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katcontrerasdev/whats-good-deux.git"
+  },
+  "author": "Kat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katcontrerasdev/whats-good-deux/issues"
+  },
+  "homepage": "https://github.com/katcontrerasdev/whats-good-deux#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
