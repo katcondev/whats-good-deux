@@ -1,1 +1,1 @@
-web: concurrently "npm start" "npm run client"
+web: "npm run client" "npm start" 
