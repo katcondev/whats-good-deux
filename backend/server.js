@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 const app = express();
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 5002;
 mongoose.set("strictQuery", true);
 
 mongoose.connect(process.env.MONGODB_URI, {
@@ -53,4 +53,4 @@ app.get("/api/spirits/:id", (req, res) => {
   });
 });
 
-app.listen(PORT, console.log(`Server running on port 5001`));
+app.listen(PORT, console.log(`Server running on port 5002`));
