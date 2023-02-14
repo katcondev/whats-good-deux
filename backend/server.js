@@ -3,7 +3,9 @@ const products = require("./data/products");
 
 const app = express();
 
-app.get("/", (req, res) => {
+//localhost:27017
+
+mongodb: app.get("/", (req, res) => {
   res.send("Api is running");
 });
 
@@ -12,7 +14,7 @@ app.get("/api/products", (req, res) => {
 });
 
 app.get("/api/product/:id", (req, res) => {
-  const product = products.find((p) => p._id === req.params.id);
+  const product = products.find((p) => p._id === req.params._id);
   res.json(product);
 });
 

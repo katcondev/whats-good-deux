@@ -1,4 +1,6 @@
-import React from "react";
+import axios from "axios";
+import React, { useState, useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
 import {
   Row,
   Col,
@@ -9,15 +11,24 @@ import {
   ListGroupItem,
 } from "react-bootstrap";
 
-import products from "../products";
-
 const ProductScreen = ({ match }) => {
-  const product = products.find((p) => p._id === match.params.id);
+  const { id } = useParams();
+  const [product, setProduct] = useState([]);
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const { data } = await axios.get(`/api/products/${match.params._id}`);
+
+      setProduct(data);
+    };
+    fetchProduct();
+    //eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id]);
+
   return (
     <div key={product._id} id='prodW'>
-      <Button className='py-4 my-3' href='/'>
-        Go Back
-      </Button>
+      <Link to='/'>
+        <Button className='py-4 my-3'>Go Back</Button>
+      </Link>
       <Row className='py-4'>
         <Col lg={5}>
           <Image
