@@ -4,13 +4,10 @@ const mongoose = require("mongoose");
 const app = express();
 mongoose.set("strictQuery", true);
 
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost:27017/whats-good",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
+mongoose.connect("mongodb://localhost:27017/whats-good", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 const spiritSchema = new mongoose.Schema({
   name: String,
@@ -37,20 +34,6 @@ app.get("/api/spirits", (req, res) => {
     } else {
       res.json(spirits);
     }
-  });
-});
-
-app.get("/api/spirits/:id", (req, res) => {
-  const id = req.params.id;
-
-  if (!mongoose.Types.ObjectId.isValid(id)) {
-    return res.status(400).send("Invalid ObjectId");
-  }
-
-  Spirit.findById(id, (err, spirit) => {
-    if (err) return res.status(500).send(err);
-    if (!spirit) return res.status(404).send("Spirit not found.");
-    res.send(spirit);
   });
 });
 
