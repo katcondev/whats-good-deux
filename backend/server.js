@@ -1,16 +1,14 @@
 const express = require("express");
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 const app = express();
 mongoose.set("strictQuery", true);
 
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost:27017/whats-good",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 const spiritSchema = new mongoose.Schema({
   name: String,
