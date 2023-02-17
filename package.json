@@ -8,7 +8,7 @@
     "server": "nodemon backend/server",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "cd frontend && npm install --legacy-peer-devs && npm run build"
+    "heroku-postbuild": "cd frontend && npm install --legacy-peer-deps && npm run build"
   },
   "repository": {
     "type": "git",
