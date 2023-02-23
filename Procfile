@@ -1,1 +1,1 @@
-web: npm run start && npm run client
+web: sh -c 'npm run start && npm run client'
