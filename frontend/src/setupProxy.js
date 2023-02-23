@@ -2,9 +2,9 @@ const { createProxyMiddleware } = require("http-proxy-middleware");
 
 module.exports = function (app) {
   app.use(
-    "/api",
+    "/api/products",
     createProxyMiddleware({
-      target: "http://localhost:5006/api/products",
+      target: "http://localhost:5006",
       changeOrigin: true,
     })
   );
