@@ -1,1 +1,1 @@
-web: sh -c 'npm run start && npm run client'
+web: concurrently "npm run start:server" "npm run start:client"
