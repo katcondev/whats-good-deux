@@ -5,7 +5,7 @@
   "type": "module",
   "main": "backend/server.js",
   "scripts": {
-    "start": "cd frontend & npm start",
+    "start": "cd frontend && npm i --legacy-peer-deps && npm start",
     "server": "nodemon backend/server.js",
     "develop": "concurrently \"cd backend && npm run watch\" \"cd frontend && npm start\"",
     "install": "cd backend && npm i --legacy-peer-deps && cd ../frontend && npm i --legacy-peer-deps",
