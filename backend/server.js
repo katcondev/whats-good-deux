@@ -15,6 +15,14 @@ app.get("/", (req, res) => {
 
 app.use("/api/products", productRoutes);
 
+app.use(express.static("frontend/build"));
+
+// Express serve up index.html file if it doesn't recognize route
+const path = require("path");
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "backend", "build", "index.html"));
+});
+
 process.on("unhandledRejection", (err) => {
   // if you want a stack always throw a error
   console.log(`Send this to error tracking: ${err.stack}`);
