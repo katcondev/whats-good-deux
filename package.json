@@ -12,8 +12,7 @@
     "server": "nodemon backend/server.js",
     "develop": "concurrently \"cd backend && npm run watch\" \"cd frontend && npm start\"",
     "install": "cd backend && npm i --legacy-peer-deps && cd ../frontend && npm i --legacy-peer-deps",
-    "build": "cd frontend && npm run build",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
+    "build": "cd frontend && npm run build"
   },
   "dependencies": {
     "concurrently": "^7.6.0",
