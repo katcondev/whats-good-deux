@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "engines": {
     "node": "18.x"
-  }
+  },
   "description": "This is a full stack app",
   "type": "module",
   "main": "backend/server.js",
