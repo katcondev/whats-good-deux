@@ -1,1 +1,2 @@
-web: npm run start && nodemon backend/server
+web: npm run start 
+server: nodemon backend/server.js
