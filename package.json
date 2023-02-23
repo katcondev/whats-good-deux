@@ -5,7 +5,6 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "install": "npm i --legacy-peer-deps",
     "start": "cd backend && node server.js",
     "server": "nodemon backend/server.js",
     "client": "cd frontend && npm start",
