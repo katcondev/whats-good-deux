@@ -16,18 +16,18 @@ app.get("/", (req, res) => {
 
 app.use("/api/products", productRoutes);
 
-// app.use(express.static("frontend/build"));
+app.use(express.static("frontend/build"));
 
-// // Express serve up index.html file if it doesn't recognize route
+// Express serve up index.html file if it doesn't recognize route
 
-// app.get("*", (req, res) => {
-//   res.sendFile(path.resolve(__dirname, "backend", "build", "index.html"));
-// });
-
-app.use(express.static(path.join(__dirname, "frontend/build")));
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "frontend/build"));
+  res.sendFile(path.resolve(__dirname, "backend", "build", "index.html"));
 });
+
+// app.use(express.static(path.join(__dirname, "../build")));
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "../build"));
+// });
 
 process.on("unhandledRejection", (err) => {
   // if you want a stack always throw a error
