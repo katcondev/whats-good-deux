@@ -5,13 +5,13 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
+    "install": "npm i --legacy-peer-deps",
     "start": "cd backend && node server.js",
     "server": "nodemon backend/server.js",
-    "client": "npm start --prefix frontend",
+    "client": "cd frontend && npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seeder",
-    "data:destroy": "node backend/seeder -d",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --legacy-peer-deps --prefix frontend && npm run build --prefix frontend"
+    "data:destroy": "node backend/seeder -d"
   },
   "repository": {
     "type": "git",
