@@ -24,11 +24,6 @@ app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "backend", "build", "index.html"));
 });
 
-// app.use(express.static(path.join(__dirname, "../build")));
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "../build"));
-// });
-
 process.on("unhandledRejection", (err) => {
   // if you want a stack always throw a error
   console.log(`Send this to error tracking: ${err.stack}`);
@@ -36,4 +31,4 @@ process.on("unhandledRejection", (err) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, console.log(`Server running on port 5002`));
+app.listen(PORT, console.log(`Server running on port 5000`));
