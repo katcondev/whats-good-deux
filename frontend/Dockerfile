@@ -1,6 +1,5 @@
 FROM node:12.18.3
 
-LABEL version="1.0"
 LABEL description="what's good frontend"
 LABEL maintainer = ["kat.contreras@gmail.com"]
 
